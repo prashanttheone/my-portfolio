@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        #navbar {
+            background: #DAE2F8;
+            background: -webkit-linear-gradient(to right, #D6A4A4, #DAE2F8);
+            background: linear-gradient(to right, #D6A4A4, #DAE2F8);
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet"
+        href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+    <title>Prashant Kumar</title>
+</head>
+
+<body>
+
+    <!-- nav bar section -->
+
+    <nav id="navbar"
+        class="bg-nav  dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+        <div
+            class="lg:max-w-screen-xl max-w-md flex flex-wrap items-center lg:justify-between justify-evenly mx-auto p-4">
+            <a href="#" class="flex items-center">
+                <img src="plogo.png" class="h-8 mr-3" alt="Prashant logo">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Prashant
+                    Kumar</span>
+            </a>
+            <span>
+
+                <button type="submit"> <input type="text" placeholder="Search.." name="search"
+                        class="bg-white lg:block hidden"></button>
+            </span>
+            <div class="flex md:order-2 md:end-0">
+                <button type="button"
+                    class="text-white bg-blue-700 hover:bg-pink-800 active:bg-pink-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:from-pink-500 hover:to-yellow-500 dark:focus:ring-blue-800"><a
+                        href="#" class="no-underline">Hire Me</a>
+                </button>
+                <button data-collapse-toggle="navbar-sticky" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-sticky" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul
+                    class="flex flex-col bg-white p-4 bg-slate md:mx-3 mt-4  dark:bg-gray-800 font-medium border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0  md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-white hover:text-blue-700 rounded md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-900 hover:text-blue-700 rounded md:p-0 md:dark:hover:text-blue-500 dark:text-white md:dark:border-gray-700">About</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-900 hover:text-blue-700 rounded md:p-0 md:dark:hover:text-blue-500 dark:text-white md:dark:border-gray-700">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-gray-900 hover:text-blue-700 rounded md:p-0 md:dark:hover:text-blue-500 dark:text-white md:dark:border-gray-700">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="p-12 "></div>
+    <!-- I am developer section-->
+    <section
+        class="m-0 py-10 bg-gradient-to-t bg-slate-900 text-gray-100 flex flex-col items-center md:flex-row md:justify-between md:gap-x-24">
+
+        <div class="mx-auto max-w-screen-lg px-3 py-6">
+            <div class="flex flex-col items-center md:flex-row md:justify-between md:gap-x-24">
+                <div>
+                    <h1 class="text-3xl font-bold">Jai Shree Ram, I'm <span
+                            class="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent">PRASHANT</span>
+                        <div class="text-3xl text-green-200" id="text"
+                            style="clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);"> Front-End-Developer</div>
+                    </h1>
+                    <p>Aspiring Front-End Developer | Passionate about Crafting Engaging Web Experiences</p>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- right section          profile image -->
+
+        <div class="shrink-0 m-5 relative"><img
+                class="rounded-full  mr-5 cursor-pointer hover:transform-scale-y-100 transition ease-in-out delay-150  hover:-translate-y-1  hover:filter-grey hover:scale-110 duration-300   ..."
+                style="width: 200px; height: 200px;" src="pky.jpg" alt="Avatar image" loading="lazy" /></div>
+
+    </section>
+    <div class="flex justify-center items-center bg-gray-400 py-5">
+        <h1 class="text-4xl bg-gray-400 text-white font-extrabold">Some Projects</h1>
+    </div>
+
+    <!-- cards hover to display texts -->
+    <div>
+        <div class="flex min-h-screen items-center justify-center bg-neutral-800 mb-1 ">
+            <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+                <div
+                    class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+                    <div class="h-96 w-72">
+                        <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+                            src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                            alt="" />
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
+                    </div>
+                    <div
+                        class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                        <h1 class="font-dmserif text-3xl font-bold text-white">Beauty</h1>
+                        <p
+                            class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci
+                            placeat.</p>
+                        <button
+                            class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See
+                            More</button>
+                    </div>
+                </div>
+                <div
+                    class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+                    <div class="h-96 w-72">
+                        <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+                            src="https://images.unsplash.com/photo-1494145904049-0dca59b4bbad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80"
+                            alt="" />
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
+                    </div>
+                    <div
+                        class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                        <h1 class="font-dmserif text-3xl font-bold text-white">Beyond Builder</h1>
+                        <p
+                            class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci
+                            placeat.</p>
+                        <button
+                            class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See
+                            More</button>
+                    </div>
+                </div>
+                <div
+                    class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+                    <div class="h-96 w-72">
+                        <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+                            src="https://images.unsplash.com/photo-1502675135487-e971002a6adb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80"
+                            alt="" />
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
+                    </div>
+                    <div
+                        class="mb-2 absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                        <h1 class="font-dmserif text-3xl font-bold text-white">Shooting Star</h1>
+                        <p
+                            class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci
+                            placeat.</p>
+                        <button
+                            class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">See
+                            More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+    <div class="h-4"></div>
+
+    <!-- what i do section -->
+    <section class="relative w-100vh">
+        <div
+            class=" absolute flex justify-center items-center text-white text-3xl font-extrabold mt-2 lg:mt-4 ml-[30%] lg:ml-[47%]  ">
+            WHAT I DO</div>
+
+        <div class="bg-slate-950   flex min-h-screen items-center justify-center">
+            <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 mx-3 lg:mx-12">
+
+                <div>
+                    <!-- 01 -->
+                    <div class="bg-slate-950 group relative  border border-solid border-gray-500 cursor-pointer
+                                transition-all duration-200 hover:shadow-md hover:scale-105  rounded-md py-5 px-4 ">
+                        <h1 class="text-white text-2xl text-center">Responsive Web Development</h1>
+                        <div class="flex items-center justify-center">
+                            <span class="bg-white rounded-full flex items-center justify-center group-hover:bg-cyan-700"
+                                style="width: 50px; height:50px;">
+                                <i class="fa fa-link absolute " aria-hidden="true"></i>
+                            </span>
+                        </div>
+                        <p class="text-white opacity-70">
+                            "My expertise in Responsive Web Development ensures that websites
+                            I create adapt seamlessly to all screen sizes and devices.Users
+                            can expect a consistent and enjoyable experience, whether on a
+                            desktop, tablet, or smartphone."
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- 02 -->
+                <div>
+                    <div class="bg-slate-950 border border-solid border-gray-500 cursor-pointer
+                           transition-all duration-200 hover:shadow-md hover:scale-105 group rounded-md py-5 px-4 ">
+                        <h1 class="text-white text-2xl text-center">User Interface Design</h1>
+                        <div class="flex items-center justify-center">
+                            <span
+                                class="bg-white rounded-full flex items-center justify-center ml-2 group-hover:bg-[#a1b9e6]"
+                                style="width: 50px; height:50px;">
+                                <i class="fa fa-laptop" aria-hidden="true"> </i>
+                            </span>
+                        </div>
+                        <p class="text-white opacity-70">"I excel in User Interface Design, crafting visually appealing
+                            and user-friendly interfaces that prioritize aesthetics and seamless interaction.
+                            Every detail is meticulously designed to leave a lasting impression."
+                        </p>
+                    </div>
+                </div>
+                <!-- 03-->
+                <div>
+                    <div class="bg-slate-950 border border-solid border-gray-500  cursor-pointer
+                              transition-all duration-200 hover:shadow-md hover:scale-105 group rounded-md py-5 px-4 ">
+                        <h1 class="text-white text-2xl text-center">JavaScript Frameworks</h1>
+                        <div class="flex items-center justify-center">
+                            <span class="bg-white rounded-full flex items-center justify-center"
+                                style="width: 50px; height:50px;">
+                                <i class="fa fa-cogs" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                        <p class="text-white opacity-70">
+                            "I specialize in JavaScript Frameworks like React, Vue, and Angular, enabling
+                            me to build dynamic, high-performance web applications. These frameworks streamline
+                            development,
+                            enhance code quality, and deliver feature-rich user interfaces."
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+
+
+    <footer class="relative bg-slate-200 pt-8 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap text-left lg:text-left">
+                <div class="w-full lg:w-6/12 px-4">
+                    <h4 class="text-3xl fonat-semibold text-blueGray-700">Let's keep in touch!</h4>
+                    <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
+                        Find Me on any of these platforms, I respond 1 day.
+                    </h5>
+                    <div class="mt-6 lg:mb-0 mb-6">
+                        <button
+                            class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                            type="button">
+                            <i class="fab fa-twitter"></i></button><button
+                            class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                            type="button">
+                            <i class="fab fa-facebook-square"></i></button><button
+                            class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                            type="button">
+                            <i class="fab fa-dribbble"></i></button><button
+                            class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                            type="button">
+                            <i class="fab fa-github"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-full lg:w-6/12 px-4">
+                    <div class="flex flex-wrap items-top mb-6">
+                        <div class="w-full lg:w-4/12 px-4 ml-auto">
+                            <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Useful
+                                Links</span>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="#">About Us</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="#">Github</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="#">Free
+                                        Products</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="w-full lg:w-4/12 px-4">
+                            <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Other
+                                Resources</span>
+                            <ul class="list-unstyled">
+
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="#">Terms &amp; Conditions</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="#">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="#">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-blueGray-300">
+            <div class="flex flex-wrap items-center md:justify-between justify-center">
+                <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+                    <div class="text-sm text-blueGray-500 font-semibold py-1">
+                        Copyright © <span id="get-current-year">2023</span><a href="#"
+                            class="text-blueGray-500 hover:text-gray-800" target="_blank"> by
+                            <a href="#" class="text-blueGray-500 hover:text-blueGray-800">Prashant</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- js for text split import js from npm conf js -->
+    <script>
+        let text = new SplitType('#text');
+        let characters = document.querySelectorAll(".char")
+
+        for (i = 0; i < characters.length; i++) {
+            characters[i].classList.add('translate-y-full');
+        }
+        // gasp is used for animating the character and import from  green sock
+        gsap.to('.char', {
+            y: 0,
+            stagger: 0.05,
+            delay: 0.02,
+            duration: 0.5,
+
+        });
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+</body>
+
+</html>
